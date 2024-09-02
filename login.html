@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <script src="main.js" defer></script>
+
+    <title>Tela de Login</title>
+</head>
+<body>
+    <header>
+    <div id="background"></div>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inicio.html">Menu</a></li>
+          <li>Help</li>
+          <li><a href="login.html">Account</a></li>
+          <li><a href="developer.html">Developers</a></li>
+      </ul>
+    </header>
+    <div class="wrapper">
+        <div class="card-switch">
+            <label class="switch">
+                <input class="toggle" type="checkbox">
+                <span class="slider"></span>
+                <span class="card-side"></span>
+                <div class="flip-card__inner">
+                    <div class="flip-card__front">
+                        <div class="title">Log in</div>
+                        <form id="loginForm" class="flip-card__form">
+                            <input type="email" placeholder="Email" name="email" class="flip-card__input">
+                            <input type="password" placeholder="Password" name="password" class="flip-card__input">
+                            <button class="flip-card__btn" type="submit"  onclick="location.href='login/inicio.html';">Let's go!</button>
+                        </form>
+                    </div>
+                    <div class="flip-card__back">
+                        <div class="title">Sign up</div>
+                        <form class="flip-card__form">
+                            <input type="name" placeholder="Name" class="flip-card__input">
+                            <input type="email" placeholder="Email" name="email" class="flip-card__input">
+                            <input type="password" placeholder="Password" name="password" class="flip-card__input">
+                            <button class="flip-card__btn" class="btn-link" onclick="location.href='login/inicio.html';" >Confirm!</button>
+                        </form>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <script src="script1.js" defer></script>
+</body>
+</html>
